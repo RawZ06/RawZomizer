@@ -638,90 +638,90 @@ def generateSeed():
     options[69] = random.randint(0, 1)
     if verbose:
         if options[69] == 0:
-            prints.append("Advanced tricks enabled")
-        else:
             prints.append("Advanced tricks disabled")
+        else:
+            prints.append("Advanced tricks enabled")
 
 
     #Man in the roof
     options[70] = random.randint(0, 1)
     if verbose:
         if options[70] == 0:
-            prints.append("Man on the roof trick enabled")
-        else:
             prints.append("Man on the roof trick disabled")
+        else:
+            prints.append("Man on the roof trick enabled")
 
 
     #Child deadhand
     options[71] = random.randint(0, 1)
     if verbose:
         if options[71] == 0:
-            prints.append("Child deadhand with KS enabled")
-        else:
             prints.append("Child deadhand with KS disabled")
+        else:
+            prints.append("Child deadhand with KS enabled")
 
 
     #DC Jump
     options[72] = random.randint(0, 1)
     if verbose:
         if options[72] == 0:
-            prints.append("DC jump trick enabled")
-        else:
             prints.append("DC jump trick disabled")
+        else:
+            prints.append("DC jump trick enabled")
 
 
     #Windmill HP
     options[73] = random.randint(0, 1)
     if verbose:
         if options[73] == 0:
-            prints.append("Windmill HP trick enabled")
-        else:
             prints.append("Windmill HP trick disabled")
+        else:
+            prints.append("Windmill HP trick enabled")
 
 
     #DMC HP with hover
     options[74] = random.randint(0, 1)
     if verbose:
         if options[74] == 0:
-            prints.append("DMC HP with hover trick enabled")
-        else:
             prints.append("DMC HP with hover trick disabled")
+        else:
+            prints.append("DMC HP with hover trick enabled")
 
 
     #Zora with cucco
     options[75] = random.randint(0, 1)
     if verbose:
         if options[75] == 0:
-            prints.append("Zora with cucco trick enabled")
-        else:
             prints.append("Zora with cucco trick disabled")
+        else:
+            prints.append("Zora with cucco trick enabled")
 
 
     #Zora with hover
     options[76] = random.randint(0, 1)
     if verbose:
         if options[76] == 0:
-            prints.append("Zora with hover trick enabled")
-        else:
             prints.append("Zora with hover trick disabled")
+        else:
+            prints.append("Zora with hover trick enabled")
 
 
     #Tunic
     options[77] = random.randint(0, 1)
     if verbose:
         if options[77] == 0:
-            prints.append("Tunic requirements trick enabled")
-        else:
             prints.append("Tunic requirements trick disabled")
+        else:
+            prints.append("Tunic requirements trick enabled")
 
 
     #Morpha golden scale
     options[78] = random.randint(0, 1)
     if verbose:
         if options[78] == 0:
-            prints.append("Morpha with golden scale trick enabled")
-        else:
             prints.append("Morpha with golden scale trick disabled")
+        else:
+            prints.append("Morpha with golden scale trick enabled")
 
 
     #lens
@@ -749,36 +749,37 @@ def generateSeed():
     options[15] = random.randint(0, 1)
     if verbose:
         if options[15] == 0:
-            prints.append("Skip collapse")
-        else:
             prints.append("Don't skip collapse")
+        else:
+            prints.append("Skip collapse")
 
 
     #Skip Guard
     options[16] = random.randint(0, 1)
     if verbose:
         if options[16] == 0:
-            prints.append("Skip guard")
-        else:
             prints.append("Don't skip guard")
+        else:
+            prints.append("Skip guard")
 
 
     #Skip epona
     options[17] = random.randint(0, 1)
     if verbose:
         if options[17] == 0:
-            prints.append("Skip epona race: enabled")
-        else:
             prints.append("Skip epona race: disabled")
+        else:
+            prints.append("Skip epona race: enabled")
 
 
     #Fast Chest
     options[18] = random.randint(0, 1)
     if verbose:
         if options[18] == 0:
-            prints.append("Fast chest cutscene")
-        else:
             prints.append("Normal chest cutscene")
+        else:
+            prints.append("Fast chest cutscene")
+
 
 
     #Random big poe
@@ -847,9 +848,9 @@ def generateSeed():
     options[24] = random.randint(0, 1)
     if verbose:
         if options[24] == 0:
-            prints.append("Start with scarecrow")
-        else:
             prints.append("Don't start with scarecrow")
+        else:
+            prints.append("Start with scarecrow")
 
 
     #Songs notes random
@@ -959,7 +960,7 @@ main=Tk()
 
 main.geometry("700x250+500+300")
 
-main.title("RawZomizer V3.3 : Setting String Randomizer for OoTR")
+main.title("RawZomizer V3.4 : Setting String Randomizer for OoTR")
 
 name = Label(main, text="Created by RawZ. Thanks to Yanis and Touyet for the texts corrections")
 name.pack(side=BOTTOM)
