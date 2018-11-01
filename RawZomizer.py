@@ -16,12 +16,12 @@ main=Tk()
 
 main.geometry("450x100+500+300")
 
-main.title("RawZomizer V3.6 : Setting String Randomizer for OoTR")
+main.title("RawZomizer V3.6 : Settings String Randomizer for OoTR")
 
 version = StringVar(main)
 version.set("Version 2.23.x - 3.x")
 
-Label(main, text="Choice your version of OoTR").grid(row=1, column=1)
+Label(main, text="Choose your version of OoTR").grid(row=1, column=1)
 w1 = OptionMenu(main, version, "Version 2.23.x - 3.x", "Version 3.1.x")
 w1.grid(row=1, column=2)
 
