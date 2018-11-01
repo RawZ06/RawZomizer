@@ -309,7 +309,7 @@ def v_31():
                 options[55] = 1
 
             if verbose:
-                prints.append("Master Quest Dungeons : " + quest)
+                prints.append("Master Quest Dungeons : " + str(quest))
         else:
             if verbose:
                 prints.append("Master Quest Dungeons : Random")
