@@ -1,5 +1,6 @@
 from tkinter import *
 import random
+import version
 
 def v_30():
     global options, prints, i
@@ -962,9 +963,9 @@ def v_30():
 
     main.geometry("700x250+500+300")
 
-    main.title("RawZomizer V3.6 : Settings String Randomizer for OoTR")
+    main.title("RawZomizer "+ str(version.VERSION) +" : Settings String Randomizer for OoTR")
 
-    name1 = Label(main, text="RawZomizer for 3.0")
+    name1 = Label(main, text="RawZomizer for " + version.RELEASE)
     name1.pack(side=TOP)
 
     name = Label(main, text="Created by RawZ. Thanks to Yanis and Touyet for the text corrections")
