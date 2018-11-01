@@ -34,16 +34,16 @@ main.geometry("450x150+500+300")
 
 main.title("RawZomizer "+ str(version.VERSION) +" : Settings String Randomizer for OoTR")
 
-l = LabelFrame(main, text="Choice version", padx=20, pady=20)
+l = LabelFrame(main, text="Choose version", padx=20, pady=20)
 l.pack(fill="both", expand="yes", side=BOTTOM)
 
 Label(l, text="Last release supported : " + version.RELEASE).grid(row=0, column=1)
-Label(l, text="Last release dev : " + version.DEV).grid(row=0, column=2)
+Label(l, text="Last dev supported: " + version.DEV).grid(row=0, column=2)
 
 version = StringVar(main)
 version.set("Release")
 
-Label(main, text="Choose your version of OoTR").grid(row=1, column=1)
+Label(l, text="Choose your version of OoTR").grid(row=1, column=1)
 w1 = OptionMenu(l, version, "Release", "Dev", command=warning)
 w1.grid(row=1, column=2)
 
