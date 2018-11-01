@@ -2,6 +2,7 @@ from tkinter import *
 import random
 
 def v_30():
+    global options, prints, i
     # 32 characters
     letters = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
     index_to_letter = { i: letters[i] for i in range(32) }
@@ -961,7 +962,7 @@ def v_30():
 
     main.geometry("700x250+500+300")
 
-    main.title("RawZomizer V3.5 : Setting String Randomizer for OoTR")
+    main.title("RawZomizer V3.6 : Setting String Randomizer for OoTR")
 
     name1 = Label(main, text="RawZomizer for 3.0")
     name1.pack(side=TOP)

@@ -16,7 +16,7 @@ main=Tk()
 
 main.geometry("450x100+500+300")
 
-main.title("RawZomizer V3.5 : Setting String Randomizer for OoTR")
+main.title("RawZomizer V3.6 : Setting String Randomizer for OoTR")
 
 version = StringVar(main)
 version.set("Version 2.23.x - 3.x")
