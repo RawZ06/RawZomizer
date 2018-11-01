@@ -46,7 +46,7 @@ def v_30():
 
         text_shuffle_max = 0
 
-        if(text_shuffle.get() == "Shuffle excepted Hints and Keys"):
+        if(text_shuffle.get() == "Shuffled except Hints and Keys"):
             text_shuffle_max = 1
 
         elif(text_shuffle.get() == "All text shuffled"):
@@ -147,13 +147,13 @@ def v_30():
             options[6] = 1
             options[7] = 0
             if verbose:
-                prints.append("Bridge : All Medaillons")
+                prints.append("Bridge : All Medallions")
 
         elif bridge == 2:
             options[6] = 0
             options[7] = 1
             if verbose:
-                prints.append("Bridge : Vanilla (Shadow + Spirit Medallions)")
+                prints.append("Bridge : Vanilla (Shadow + Spirit Medallions + Light Arrows)")
 
         else:
             options[6] = 1
@@ -232,9 +232,9 @@ def v_30():
         options[9] = random.randint(0, 1)
         if verbose:
             if options[9] == 0:
-                prints.append("Bombchu in logic: OFF")
+                prints.append("Bombchus in logic: OFF")
             else:
-                prints.append("Bombchu in logic: ON")
+                prints.append("Bombchus in logic: ON")
 
 
         #Major item
@@ -289,9 +289,9 @@ def v_30():
         options[27] = random.randint(0, 1)
         if verbose:
             if options[27] == 0:
-                prints.append("Shuffle Ocarina: OFF")
+                prints.append("Shuffle Ocarinas: OFF")
             else:
-                prints.append("Shuffle Ocarina: ON")
+                prints.append("Shuffle Ocarinas: ON")
 
 
         #Shuffle Songs
@@ -336,7 +336,7 @@ def v_30():
             options[30] = 1
             options[31] = 1
             if verbose:
-                prints.append("Scrubsanity: Random Prize")
+                prints.append("Scrubsanity: Random Prices")
 
 
         #Shop
@@ -397,25 +397,25 @@ def v_30():
             options[36] = 0
             options[37] = 0
             if verbose:
-                prints.append("Map/Compass: Remove")
+                prints.append("Maps/Compasses: Remove")
 
         elif map == 1:
             options[36] = 1
             options[37] = 0
             if verbose:
-                prints.append("Map/Compass: Start with")
+                prints.append("Maps/Compasses: Start with")
 
         elif map == 2:
             options[36] = 0
             options[37] = 1
             if verbose:
-                prints.append("Map/Compass: Dungeon Only")
+                prints.append("Maps/Compasses: Dungeon Only")
 
         else:
             options[36] = 1
             options[37] = 1
             if verbose:
-                prints.append("Map/Compass: Everywhere")
+                prints.append("Maps/Compasses: Everywhere")
 
 
         #Keys
@@ -464,9 +464,9 @@ def v_30():
         options[42] = random.randint(0, 1)
         if verbose:
             if options[42] == 0:
-                prints.append("Informations at Temple of Time")
+                prints.append("Information at Temple of Time altar")
             else:
-                prints.append("Information with Map/Compass")
+                prints.append("Information with Maps/Compasses")
 
 
         #Ganon BK
@@ -474,7 +474,7 @@ def v_30():
             options[43] = random.randint(0, 1)
             if verbose:
                 if options[43] == 0:
-                    prints.append("Ganon Boss Key: Keep")
+                    prints.append("Ganon Boss Key: Not removed")
                 else:
                     prints.append("Ganon Boss Key: Remove")
 
@@ -549,36 +549,36 @@ def v_30():
         options[51] = random.randint(0, 1)
         if verbose:
             if options[51] == 0:
-                prints.append("Skulls without Sun Song")
+                prints.append("Night skulls without Sun's song")
             else:
-                prints.append("Skulls with Sun Song")
+                prints.append("Night skulls only with Sun's song")
 
 
         #Big Poes
         options[52] = random.randint(0, 1)
         if verbose:
             if options[52] == 0:
-                prints.append("Big Poes: Enable")
+                prints.append("Big Poes: Enabled")
             else:
-                prints.append("Big Poes: Disable")
+                prints.append("Big Poes: Disabled")
 
 
         #Child Fishing
         options[53] = random.randint(0, 1)
         if verbose:
             if options[53] == 0:
-                prints.append("Child fishing: Enable")
+                prints.append("Child fishing: Enabled")
             else:
-                prints.append("Child fishing: Disable")
+                prints.append("Child fishing: Disabled")
 
 
         #Adult Fishing
         options[54] = random.randint(0, 1)
         if verbose:
             if options[54] == 0:
-                prints.append("Adult fishing: Enable")
+                prints.append("Adult fishing: Enabled")
             else:
-                prints.append("Adult fishing: Disable")
+                prints.append("Adult fishing: Disabled")
 
 
         #Skull Mask
@@ -621,9 +621,9 @@ def v_30():
         options[59] = random.randint(0, 1)
         if verbose:
             if options[59] == 0:
-                prints.append("Dampé 2nd time enabled")
+                prints.append("Dampé 2nd race enabled")
             else:
-                prints.append("Dampé 2nd time disabled")
+                prints.append("Dampé 2nd race disabled")
 
 
         #Biggoron
@@ -703,18 +703,18 @@ def v_30():
         options[76] = random.randint(0, 1)
         if verbose:
             if options[76] == 0:
-                prints.append("Zora with hover trick disabled")
+                prints.append("Zora with hovers trick disabled")
             else:
-                prints.append("Zora with hover trick enabled")
+                prints.append("Zora with hovers trick enabled")
 
 
         #Tunic
         options[77] = random.randint(0, 1)
         if verbose:
             if options[77] == 0:
-                prints.append("Tunic requirements trick disabled")
+                prints.append("Fewer Tunic requirements: Off ")
             else:
-                prints.append("Tunic requirements trick enabled")
+                prints.append("Fewer Tunic requirements: On")
 
 
         #Morpha golden scale
@@ -738,13 +738,13 @@ def v_30():
             options[79] = 1
             options[80] = 0
             if verbose:
-                prints.append("Lens: wasteland and chest mini game")
+                prints.append("Lens: wasteland and chest minigame")
 
         else:
             options[79] = 0
             options[80] = 1
             if verbose:
-                prints.append("Lens: chest mini game only")
+                prints.append("Lens: chest minigame only")
 
 
         #Skip Collapse
@@ -760,27 +760,27 @@ def v_30():
         options[16] = random.randint(0, 1)
         if verbose:
             if options[16] == 0:
-                prints.append("Don't skip guard")
+                prints.append("Don't skip guards")
             else:
-                prints.append("Skip guard")
+                prints.append("Skip guards")
 
 
         #Skip epona
         options[17] = random.randint(0, 1)
         if verbose:
             if options[17] == 0:
-                prints.append("Skip epona race: disabled")
+                prints.append("Don't skip Epona race")
             else:
-                prints.append("Skip epona race: enabled")
+                prints.append("Skip Epona race")
 
 
         #Fast Chest
         options[18] = random.randint(0, 1)
         if verbose:
             if options[18] == 0:
-                prints.append("Normal chest cutscene")
+                prints.append("Normal chest cutscenes")
             else:
-                prints.append("Fast chest cutscene")
+                prints.append("Fast chest cutscenes")
 
 
 
@@ -859,27 +859,27 @@ def v_30():
         options[81] = random.randint(0, 1)
         if verbose:
             if options[81] == 0:
-                prints.append("Normal song note")
+                prints.append("Normal song notes")
             else:
-                prints.append("Random song note")
+                prints.append("Random song notes")
 
 
         #Chest size
         options[82] = random.randint(0, 1)
         if verbose:
             if options[82] == 0:
-                prints.append("Normal chest size")
+                prints.append("Normal chest sizes")
             else:
-                prints.append("Chest size matches with content")
+                prints.append("Chest size matches with contents")
 
 
         #Clearer hint
         options[83] = random.randint(0, 1)
         if verbose:
             if options[83] == 0:
-                prints.append("Normal Hint")
+                prints.append("Normal Hints")
             else:
-                prints.append("Clearer hint")
+                prints.append("Clearer hints")
 
 
         #Stones
@@ -906,7 +906,7 @@ def v_30():
             options[84] = 1
             options[85] = 1
             if verbose:
-                prints.append("Hints : Nothing")
+                prints.append("Hints : Need nothing")
 
 
         #Text shuffle
@@ -915,13 +915,13 @@ def v_30():
             options[86] = 0
             options[87] = 0
             if verbose:
-                prints.append("No text shuffle")
+                prints.append("No text shuffled")
 
         elif text == 1:
             options[86] = 1
             options[87] = 0
             if verbose:
-                prints.append("Shuffle except key and hint")
+                prints.append("Shuffled except keys and hints")
 
         else:
             options[86] = 0
@@ -962,12 +962,12 @@ def v_30():
 
     main.geometry("700x250+500+300")
 
-    main.title("RawZomizer V3.6 : Setting String Randomizer for OoTR")
+    main.title("RawZomizer V3.6 : Settings String Randomizer for OoTR")
 
     name1 = Label(main, text="RawZomizer for 3.0")
     name1.pack(side=TOP)
 
-    name = Label(main, text="Created by RawZ. Thanks to Yanis and Touyet for the texts corrections")
+    name = Label(main, text="Created by RawZ. Thanks to Yanis and Touyet for the text corrections")
     name.pack(side=BOTTOM)
 
     l = LabelFrame(main, text="Generate", padx=20, pady=20)
