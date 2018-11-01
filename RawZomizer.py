@@ -32,7 +32,7 @@ main=Tk()
 
 main.geometry("450x150+500+300")
 
-main.title("RawZomizer "+ str(version.VERSION) +" : Setting String Randomizer for OoTR")
+main.title("RawZomizer "+ str(version.VERSION) +" : Settings String Randomizer for OoTR")
 
 l = LabelFrame(main, text="Choice version", padx=20, pady=20)
 l.pack(fill="both", expand="yes", side=BOTTOM)
@@ -43,7 +43,7 @@ Label(l, text="Last release dev : " + version.DEV).grid(row=0, column=2)
 version = StringVar(main)
 version.set("Release")
 
-Label(l, text="Choice your version of OoTR").grid(row=1, column=1)
+Label(main, text="Choose your version of OoTR").grid(row=1, column=1)
 w1 = OptionMenu(l, version, "Release", "Dev", command=warning)
 w1.grid(row=1, column=2)
 
