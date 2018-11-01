@@ -3,28 +3,50 @@ import random
 import os
 from v_30 import v_30
 from v_31 import v_31
+import version
+
+WARNING = "Warning ! The OoTR " + version.DEV + " is developing ! May be incompatible"
+
+label = None
 
 def execute():
     ver = version.get()
     main.destroy()
-    if ver == "Version 2.23.x - 3.x":
+    if ver == "Release":
         v_30()
     else:
         v_31()
 
+def warning(element):
+    global label
+    if element != "Release":
+        if label == None:
+            label = Label(main, text=WARNING)
+            label.pack(side=TOP)
+    else:
+        if label != None:
+            label.destroy()
+            label = None
+
 main=Tk()
 
-main.geometry("450x100+500+300")
+main.geometry("450x150+500+300")
 
-main.title("RawZomizer V3.6 : Setting String Randomizer for OoTR")
+main.title("RawZomizer "+ str(version.VERSION) +" : Setting String Randomizer for OoTR")
+
+l = LabelFrame(main, text="Choice version", padx=20, pady=20)
+l.pack(fill="both", expand="yes", side=BOTTOM)
+
+Label(l, text="Last release supported : " + version.RELEASE).grid(row=0, column=1)
+Label(l, text="Last release dev : " + version.DEV).grid(row=0, column=2)
 
 version = StringVar(main)
-version.set("Version 2.23.x - 3.x")
+version.set("Release")
 
-Label(main, text="Choice your version of OoTR").grid(row=1, column=1)
-w1 = OptionMenu(main, version, "Version 2.23.x - 3.x", "Version 3.1.x")
+Label(l, text="Choice your version of OoTR").grid(row=1, column=1)
+w1 = OptionMenu(l, version, "Release", "Dev", command=warning)
 w1.grid(row=1, column=2)
 
-Button(main, text="Execute", command=execute).grid(row=2, column=1)
+Button(l, text="Execute", command=execute).grid(row=2, column=1)
 
 main.mainloop()
